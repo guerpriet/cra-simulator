@@ -1,0 +1,134 @@
+[
+  {
+    "name": "age",
+    "category": "Demographics",
+    "dtype": "num",
+    "params": { "dist": "normal", "mean": 42, "sd": 14, "min": 18, "max": 90 },
+    "meaningful": true
+  },
+  {
+    "name": "gender",
+    "category": "Demographics",
+    "dtype": "cat",
+    "params": { "categories": ["m", "f", "d"], "probs": [0.49, 0.49, 0.02] },
+    "meaningful": true
+  },
+  {
+    "name": "nationality",
+    "category": "Demographics",
+    "dtype": "cat",
+    "params": { "categories": ["local", "EU", "non_EU"], "probs": [0.78, 0.15, 0.07] },
+    "meaningful": true
+  },
+  {
+    "name": "dependants",
+    "category": "Demographics",
+    "dtype": "num",
+    "params": { "dist": "exponential", "scale": 1.0, "offset": 0.0, "min": 0, "max": 8 },
+    "meaningful": true
+  },
+  {
+    "name": "employment_status",
+    "category": "Employment",
+    "dtype": "cat",
+    "params": {
+      "categories": ["employed", "self_employed", "civil_servant", "unemployed", "retired", "student"],
+      "probs":      [0.55,       0.10,            0.07,            0.06,        0.18,     0.04]
+    },
+    "meaningful": true
+  },
+  {
+    "name": "tenure_months",
+    "category": "Employment",
+    "dtype": "num",
+    "params": { "dist": "lognormal", "mu": 3.8, "sigma": 1.2, "min": 0, "max": 480 },
+    "meaningful": true
+  },
+  {
+    "name": "net_income",
+    "category": "Income",
+    "dtype": "num",
+    "params": { "dist": "lognormal", "mu": 7.8, "sigma": 0.45, "min": 0, "max": 30000 },
+    "meaningful": true
+  },
+  {
+    "name": "savings",
+    "category": "Income",
+    "dtype": "num",
+    "params": { "dist": "lognormal", "mu": 8.5, "sigma": 1.2, "min": 0, "max": 500000 },
+    "meaningful": true
+  },
+  {
+    "name": "debt_history",
+    "category": "Credit history",
+    "dtype": "num",
+    "params": { "dist": "right_skewed", "shape": 1.5, "scale": 3000, "offset": 0.0, "min": 0, "max": 200000 },
+    "meaningful": true
+  },
+  {
+    "name": "current_debt",
+    "category": "Credit history",
+    "dtype": "num",
+    "params": { "dist": "right_skewed", "shape": 1.2, "scale": 5500, "offset": 0.0, "min": 0, "max": 200000 },
+    "meaningful": true
+  },
+  {
+    "name": "missed_payments_24m",
+    "category": "Credit history",
+    "dtype": "num",
+    "params": { "dist": "exponential", "scale": 0.5, "offset": 0.0, "min": 0, "max": 24 },
+    "meaningful": true
+  },
+  {
+    "name": "bureau_score",
+    "category": "Credit history",
+    "dtype": "num",
+    "params": { "dist": "beta", "alpha": 3.0, "beta_": 2.0, "lo": 50, "hi": 100 },
+    "meaningful": true
+  },
+  {
+    "name": "loan_amount",
+    "category": "Loan",
+    "dtype": "num",
+    "params": { "dist": "lognormal", "mu": 9.2, "sigma": 0.75, "min": 500, "max": 500000 },
+    "meaningful": true
+  },
+  {
+    "name": "term_months",
+    "category": "Loan",
+    "dtype": "num",
+    "params": { "dist": "normal", "mean": 60, "sd": 30, "min": 6, "max": 360 },
+    "meaningful": true
+  },
+  {
+    "name": "interest_rate_pct",
+    "category": "Loan",
+    "dtype": "num",
+    "params": { "dist": "normal", "mean": 6.5, "sd": 2.5, "min": 0.5, "max": 25 },
+    "meaningful": true
+  },
+  {
+    "name": "loan_purpose",
+    "category": "Loan",
+    "dtype": "cat",
+    "params": {
+      "categories": ["auto", "home", "consolidation", "consumption", "other"],
+      "probs":      [0.25,   0.20,   0.15,            0.25,          0.15]
+    },
+    "meaningful": true
+  },
+  {
+    "name": "collateral",
+    "category": "Loan",
+    "dtype": "bin",
+    "params": { "p": 0.3 },
+    "meaningful": true
+  },
+  {
+    "name": "ltv",
+    "category": "Loan",
+    "dtype": "num",
+    "params": { "dist": "beta", "alpha": 3.5, "beta_": 2.5, "lo": 0.0, "hi": 1.2 },
+    "meaningful": true
+  }
+]
